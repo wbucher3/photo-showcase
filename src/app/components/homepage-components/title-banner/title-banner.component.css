@@ -1,0 +1,30 @@
+img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 40% 0;
+
+    padding: 0;
+    margin: 0;
+    
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+}
+
+.title-text {
+    position: absolute;
+    width: 50%;
+    top: 80vh;
+    right: 10vw;
+    word-wrap: normal;
+
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
