@@ -1,1 +1,9 @@
-<p>gallery works!</p>
+<p>Click on an image for the full thing!</p>
+
+<div class="flex-container">
+    <div class="preview-container" *ngFor="let image of images; let i = index">
+        <!-- <p class="preview-description">{{image.description!}}</p> -->
+        <img class="preview-image" [src]="image.path" />
+        <p class="preview-description">{{image.description!}}</p>
+    </div>
+</div>

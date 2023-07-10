@@ -1,0 +1,25 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-container {
+    display: grid;
+    height: 150px;
+
+}
+
+.preview-description {
+    color: white;
+}
+.preview-image {
+    display:grid;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.preview-description, .preview-image {
+    grid-column: 1;
+    grid-row: 1;
+}

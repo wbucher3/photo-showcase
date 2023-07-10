@@ -13,12 +13,28 @@ img {
     left: 0; 
 }
 
-.center-text {
+.title-text {
     position: absolute;
-    width: 30%;
-    top: 110vh;
-    right: 50%;
+    width: 50%;
+    top: 105vh;
+    right: 40%;
     word-wrap: normal;
+
+    font-size: 64px;
+}
+
+.paragraph-text {
+    position: absolute;
+    width: 80%;
+    top: 170vh;
+    right: 10%;
+    word-wrap: normal;
+
+    font-size: 24px;
+}
+
+.text {
+    color: white;
 }
 
 .container {

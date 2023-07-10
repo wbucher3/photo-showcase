@@ -16,11 +16,13 @@ img {
 
 .title-text {
     position: absolute;
-    width: 50%;
-    top: 80vh;
-    right: 10vw;
+    width: 85%;
+    top: 75vh;
+    right: 10%;
     word-wrap: normal;
 
+    font-size: 64px;
+    color: white;
 }
 
 .container {
