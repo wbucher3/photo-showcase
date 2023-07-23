@@ -9,6 +9,7 @@ import { GalleryComponent } from './components/gallery-components/gallery/galler
 import { TitleBannerComponent } from './components/homepage-components/title-banner/title-banner.component';
 import { AboutMeComponent } from './components/homepage-components/about-me/about-me.component';
 import { GalleryPanelComponent } from './components/homepage-components/gallery-panel/gallery-panel.component';
+import { ImageModalComponent } from './components/gallery-components/image-modal/image-modal.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { GalleryPanelComponent } from './components/homepage-components/gallery-
     GalleryComponent,
     TitleBannerComponent,
     AboutMeComponent,
-    GalleryPanelComponent
+    GalleryPanelComponent,
+    ImageModalComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

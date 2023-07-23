@@ -8,26 +8,18 @@ import { Image } from '../../models/image';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  images: Image[] = []
 
+  constructor() {
+    this.generateList()
+   }
 
-  // maybe use this? 
-  // https://www.npmjs.com/package/teqnia-ng-image-fullscreen-view
-  
-  images: Image[] = [
-    {path: "assets/photos/gallery/6S9A1990.jpg", description: "Mockingbird with Blueberry"},
-    {path: "assets/photos/gallery/6S9A2716.jpg", description: "Mockingbird in Fligh"},
-    {path: "assets/photos/gallery/6S9A2850.jpg", description: "Great Blue Heron"},
-    {path: "assets/photos/gallery/6S9A1309.jpg", description: "Cardinal"},
-    {path: "assets/photos/gallery/6S9A3320.jpg", description: "Dark Eyed Junco"},
+  generateList() {
+    for (let i = 41; i >= 1 ; i--) {
+      this.images.push({path: "assets/photos/bird-showcase/showcase-" + i + ".jpg", description: "bird", isSelected: false})
+    }
 
-    {path: "assets/photos/6S9A7311.jpg", description: "House Finch in the Tree"},
-    {path: "assets/photos/yellow-bellied-sapsucker.jpg", description: "Yellow Bellied Sapsucker"},
-    {path: "assets/photos/6S9A6006.jpg", description: "Cardinal"},
-    {path: "assets/photos/6S9A7140.jpg", description: "Osprey with Fish"},
-
-
-  ]
+  }
 
   ngOnInit(): void {
   }
