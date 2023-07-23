@@ -1,15 +1,19 @@
-<div class="title-container">
-    <button routerLink="/" class="back-button">↩</button>
-    <h1 class="title">Gallery</h1>
-</div>
 
-
-<div class="flex-container">
-    <div class="image-preview-container" *ngFor="let image of images; let i = index">
-        <img (click)="image.isSelected = !image.isSelected" 
-        class="preview-image" 
-        [src]="image.path" 
-        [ngClass]="{'selected': image.isSelected}"
-        />
+<div style="background-color: rgb(128, 172, 128);">
+    <div class="title-container">
+        <button routerLink="/" class="back-button">↩</button>
+        <h1 class="title">Gallery</h1>
     </div>
+
+
+    <div class="flex-container">
+        <div class="image-preview-container" *ngFor="let image of images; let i = index">
+            <img 
+            (click)="openModal(image)"
+            class="preview-image" 
+            [src]="image.path" 
+            />
+        </div>
+    </div>
+
 </div>

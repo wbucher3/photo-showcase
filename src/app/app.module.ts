@@ -10,6 +10,9 @@ import { TitleBannerComponent } from './components/homepage-components/title-ban
 import { AboutMeComponent } from './components/homepage-components/about-me/about-me.component';
 import { GalleryPanelComponent } from './components/homepage-components/gallery-panel/gallery-panel.component';
 import { ImageModalComponent } from './components/gallery-components/image-modal/image-modal.component';
+import {NoopAnimationsModule} from '@angular/platform-browser/animations';
+
+import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from '@angular/material/dialog'; 
 
 @NgModule({
   declarations: [
@@ -21,12 +24,17 @@ import { ImageModalComponent } from './components/gallery-components/image-modal
     AboutMeComponent,
     GalleryPanelComponent,
     ImageModalComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatDialogModule,
+    NoopAnimationsModule
   ],
-  providers: [],
+  providers: [
+    {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: false}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
