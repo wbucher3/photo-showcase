@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit {
    }
 
   generateList() {
-    for (let i = 41; i >= 1 ; i--) {
+    for (let i = 42; i >= 1 ; i--) {
       this.images.push({path: "assets/photos/bird-showcase/showcase-" + i + ".jpg", description: "bird"})
     }
 
