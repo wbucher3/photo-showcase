@@ -8,6 +8,12 @@
 .flex-container-top {
     display: flex;
     flex-direction: column;
+    justify-content:flex-start;
+}
+
+.flex-container-space-between {
+    display: flex;
+    flex-direction: column;
     justify-content:space-between;
 }
 
@@ -17,6 +23,9 @@
     justify-content: flex-end;
 }
 
+.dark-text {
+    color: #0a0a0a;
+}
 .text {
     color: #F3F3F3;
 }
@@ -26,14 +35,15 @@ h1 {
     margin: 3rem 0.5rem;
 }
 
+
 .about-me-body {
-    margin: 30% 0.5rem;
-    font-size: 24px;
+    margin: 10% 0.5rem;
+    font-size: 28px;
 } 
 
 .gallery-link {
     margin: 35% 0.5rem;
-    font-size: 24px;
+    font-size: 28px;
 } 
 
 

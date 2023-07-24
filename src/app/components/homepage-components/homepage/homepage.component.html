@@ -6,23 +6,27 @@
 
  <div>
 
-    <div class="bg-image flex-container-bottom" [ngStyle]="{backgroundImage:'url(assets/photos/osprey.jpg)'}">
-        <h1 class="text">Will's Bird Photos</h1>
-    </div>
-
-
-
     <div class="bg-image flex-container-top" [ngStyle]="{backgroundImage:'url(assets/photos/house-finch.jpg)'}">
-        <h1 class="text">About Me</h1>
-        <p class="text about-me-body">
-            Hi there! Welcome to my bird photo gallery! All the photos are on this site were taken by me with
-            my Canon R7 with the RF 100-500mm lens.
-        </p>
+        <h1 class="text title-text">Will's Bird Photos</h1>
     </div>
 
 
-    <div class="bg-image flex-container-top" [ngStyle]="{backgroundImage:'url(assets/photos/yellow-bellied-sapsucker.jpg)'}">
+
+
+
+    <div class="bg-image flex-container-space-between" [ngStyle]="{backgroundImage:'url(assets/photos/bird-showcase/showcase-15.jpg)'}">
         <h1 class="text">Gallery</h1>
         <a routerLink="/gallery" class="text gallery-link">Enter the Gallery</a>
     </div>
- </div>
+
+
+ 
+    <div class="bg-image flex-container-space-between" [ngStyle]="{backgroundImage:'url(assets/photos/bird-showcase/showcase-36.jpg)'}"> 
+        <h1 class="dark-text">About Me</h1>
+        <p class="dark-text about-me-body">
+            Welcome to my bird photo gallery! All the photos are on this site were taken by me!
+            I use a Canon R7 with the Canon RF 100-500mm lens.
+        </p>
+    </div>
+
+</div>
