@@ -1,5 +1,10 @@
-<div class="container" [mat-dialog-close]="true">
+<div class="container" >
 
-    <img [src]="data.image!.path" [mat-dialog-close]="true"/>
+    <img [src]="currentData"  [mat-dialog-close]="true"/>
+    <div>
+        <button (click)="previousPhoto()" [disabled]="currentPhoto === 42"><</button>
+        <button (click)="nextPhoto()" [disabled]="currentPhoto === 1">></button>
+    </div>
+
 
 </div>

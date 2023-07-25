@@ -28,6 +28,7 @@
 }
 .text {
     color: #F3F3F3;
+    cursor:default;
 }
 
 h1 {
@@ -41,7 +42,7 @@ h1 {
     font-size: 28px;
 } 
 
-.gallery-link {
+.gallery-text {
     margin: 35% 0.5rem;
     font-size: 28px;
 }
