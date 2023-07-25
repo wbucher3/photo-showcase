@@ -22,9 +22,6 @@ export class ImageModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  close() {
-    
-  }
 
   nextPhoto() {
     this.currentData = "assets/photos/bird-showcase/bird-showcase-small-" + (this.currentPhoto - 1) + ".jpg";
