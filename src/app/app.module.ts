@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './components/homepage-components/homepage/homepage.component';
-import { ContactComponent } from './components/contact-components/contact/contact.component';
 import { GalleryComponent } from './components/gallery-components/gallery/gallery.component';
 import { ImageModalComponent } from './components/gallery-components/image-modal/image-modal.component';
 import {NoopAnimationsModule} from '@angular/platform-browser/animations';
@@ -15,7 +14,6 @@ import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from '@angular/material/dia
   declarations: [
     AppComponent,
     HomepageComponent,
-    ContactComponent,
     GalleryComponent,
     ImageModalComponent,
     

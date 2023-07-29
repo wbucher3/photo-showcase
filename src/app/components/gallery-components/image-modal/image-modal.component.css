@@ -34,3 +34,9 @@ button {
 button:disabled {
     opacity: 0.20;
 }
+
+@media screen and (min-width: 720px) {
+    img {
+      max-width: 50%;
+    }
+  }
