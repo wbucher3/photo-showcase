@@ -9,7 +9,8 @@
 
 .image {
     height: 100%;
-    width: 100%;
+    max-width:  40%;
     padding: 3%;
     object-fit: contain;
+    /* border: 1px solid red; */
 }
