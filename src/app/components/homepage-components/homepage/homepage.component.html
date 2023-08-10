@@ -1,33 +1,50 @@
-<!-- <app-title-banner></app-title-banner>
-<app-about-me></app-about-me>
-<app-gallery-panel></app-gallery-panel>
- -->
+<app-banner></app-banner>
+
+<app-photo-banner></app-photo-banner>
+
+<app-text-banner
+[displayText]="'“Every bird, every tree, every flower reminds me what a blessing and privilege it is just to be alive.” — Marty Rubin'">
+</app-text-banner>
+
+<app-gallery-row
+[image1]="images[0]"
+[image2]="images[1]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+<app-gallery-row
+[image1]="images[2]"
+[image2]="images[3]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+<app-gallery-row
+[image1]="images[4]"
+[image2]="images[5]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+<app-text-banner
+[displayText]="'“A bird does not sing because it has an answer, it sings because it has a song.” — Maya Angelou'">
+</app-text-banner>
+
+<app-gallery-row
+[image1]="images[6]"
+[image2]="images[7]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+<app-gallery-row
+[image1]="images[8]"
+[image2]="images[9]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+<app-gallery-row
+[image1]="images[10]"
+[image2]="images[11]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
 
 
- <div>
-
-    <div class="bg-image flex-container-top" [ngStyle]="{backgroundImage:'url(assets/photos/house-finch.jpg)'}">
-        <h1 class="text title-text">Will's Bird Photos</h1>
-    </div>
-
-
-
-
-
-    <div class="bg-image flex-container-space-between" [ngStyle]="{backgroundImage:'url(assets/photos/red-bellied-woodpecker.jpg)'}" routerLink="/gallery">
-        <h1 class="text">Gallery</h1>
-        <!-- <button routerLink="/gallery" class="text gallery-link">Enter the Gallery</button> -->
-        <p class="text gallery-text">Tap to Enter</p>
-    </div>
-
-
- 
-    <div class="bg-image flex-container-space-between" [ngStyle]="{backgroundImage:'url(assets/photos/dark-eyed-junco.jpg)'}"> 
-        <h1 class="text">Little Bit of Info</h1>
-        <p class="text about-me-body">
-            All of the photos on this website were taken by me! I use a Canon R7
-            with a Canon RF 100-500mm f/4.5 - 7.1. 
-        </p>
-    </div>
-
-</div>
+<app-footer></app-footer>
