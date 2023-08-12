@@ -1,0 +1,44 @@
+<app-banner [bannerText]="'WILL BUCHER'"></app-banner>
+<app-photo-banner [image]="images[4]"></app-photo-banner>
+
+<app-text-banner
+[displayText]="'I love cats'">
+</app-text-banner>
+
+<app-gallery-row
+[image1]="images[1]"
+[image2]="images[9]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>  
+
+<app-gallery-row
+[image1]="images[2]"
+[image2]="images[3]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+<app-gallery-row
+[image1]="images[5]"
+[image2]="images[7]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+<app-text-banner
+[displayText]="'They are great!'">
+</app-text-banner>
+
+<app-gallery-row
+[image1]="images[6]"
+[image2]="images[8]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+
+<app-gallery-row
+[image1]="images[10]"
+[image2]="images[0]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+
+<app-footer></app-footer>

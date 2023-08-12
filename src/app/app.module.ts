@@ -15,6 +15,7 @@ import { TextBannerComponent } from './components/atoms/text-banner/text-banner.
 import { GalleryRowComponent } from './components/atoms/gallery-row/gallery-row.component';
 import { FooterComponent } from './components/atoms/footer/footer.component';
 import { PhotoPopOutComponent } from './components/atoms/photo-pop-out/photo-pop-out.component';
+import { CatPageComponent } from './components/cat-page/cat-page.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PhotoPopOutComponent } from './components/atoms/photo-pop-out/photo-pop
     GalleryRowComponent,
     FooterComponent,
     PhotoPopOutComponent,
+    CatPageComponent,
     
   ],
   imports: [
