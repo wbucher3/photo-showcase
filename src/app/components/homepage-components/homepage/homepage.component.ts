@@ -16,6 +16,7 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mainImage: Image = {path: "assets/photos/house-finch.jpg", description: "banner bird"}
   images: Image[] = []
 
   constructor(public dialog: MatDialog) {

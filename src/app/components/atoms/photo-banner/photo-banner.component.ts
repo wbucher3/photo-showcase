@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Image } from '../../models/image';
 
 @Component({
   selector: 'app-photo-banner',
@@ -14,4 +15,6 @@ export class PhotoBannerComponent implements OnInit {
 
   imagePath: string = "assets/photos/house-finch.jpg"
 
+  @Input()
+  image?: Image;
 }
