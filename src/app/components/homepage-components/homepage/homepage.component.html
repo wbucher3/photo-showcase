@@ -7,22 +7,24 @@
 </app-text-banner>
 
 <app-gallery-row
-[image1]="images[0]"
-[image2]="images[1]"
+[image1]="images[1]"
+[image2]="images[0]"
 (photoClicked)="catchPhoto($event)">
 </app-gallery-row>
 
 <app-gallery-row
-[image1]="images[2]"
-[image2]="images[3]"
-(photoClicked)="catchPhoto($event)">
-</app-gallery-row>
-
-<app-gallery-row
-[image1]="images[4]"
+[image1]="images[3]"
 [image2]="images[5]"
 (photoClicked)="catchPhoto($event)">
 </app-gallery-row>
+
+<app-gallery-row
+[image1]="images[8]"
+[image2]="images[9]"
+(photoClicked)="catchPhoto($event)">
+</app-gallery-row>
+
+
 
 <app-text-banner
 [displayText]="'“A bird does not sing because it has an answer, it sings because it has a song.” — Maya Angelou'">
@@ -35,10 +37,11 @@
 </app-gallery-row>
 
 <app-gallery-row
-[image1]="images[8]"
-[image2]="images[9]"
+[image1]="images[4]"
+[image2]="images[14]"
 (photoClicked)="catchPhoto($event)">
 </app-gallery-row>
+
 
 <app-gallery-row
 [image1]="images[10]"
